@@ -1,23 +1,20 @@
-from flask import  render_template,request,Blueprint,jsonify, session, url_for
+from flask import  redirect, render_template,request,Blueprint,jsonify, session, url_for
 from jinja2 import TemplateNotFound
 
 
 
-FUNCTION_NAME="classification"
-classification=Blueprint(FUNCTION_NAME,__name__,url_prefix="/"+FUNCTION_NAME,template_folder="templates",static_folder="./static")
+FUNCTION_NAME="summaryMethod"
+summaryMethod=Blueprint(FUNCTION_NAME,__name__,url_prefix="/"+FUNCTION_NAME,template_folder="templates",static_folder="./static")
 
-@classification.route("/chi-square-test",methods=["GET"])
-def chiSquareTest():
+
+@summaryMethod.route('/cluster-analysis')
+def clusterAnalysis():
     return render_template(FUNCTION_NAME+"/login.html",message="")
 
 
-@classification.route("/t-test",methods=["GET"])
-def tTest():
+@summaryMethod.route('/latent-class-analysis')
+def latentClassAnalysis():
     return render_template(FUNCTION_NAME+"/login.html",message="")
 
-
-@classification.route("/variance",methods=["GET"])
-def variance():
-    return render_template(FUNCTION_NAME+"/login.html",message="")
 
 
