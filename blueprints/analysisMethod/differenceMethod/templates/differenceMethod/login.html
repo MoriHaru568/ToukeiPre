@@ -1,18 +1,46 @@
 {% extends 'differenceMethod/base.html' %} {% block title %}ログイン{% endblock
 %} {% block body %}
 
-<div class="container">
-  <div class="title">分析方法一覧</div>
-  <li>カイ二乗検定</li>
-  <li>t検定</li>
-  <li>分散分析</li>
-  <li>因子分析</li>
-  <li>主成分分析</li>
-  <li>多次元尺度構成法</li>
-  <li>コレスポンデンス分析</li>
-  <li>数量化Ⅲ類</li>
-  <li>クラスター分析</li>
-  <li>潜在クラス分析</li>
+<div class="container-fluid">
+  <h3 class="title">カイ二乗検定</h3>
+  <div class="row justify-content-center">
+    <div class="col-10">
+      <h5 class="sub-title">カイ二乗検定とは</h5>
+      <p>
+        カイ二乗検定（χ^2検定）は、統計学において用いられる一種の検定方法です。特に、カテゴリー別のデータ（例えば、性別、年齢層、好みなど）がある特定の理論や期待値からどれだけ異なっているかを調べるのに使われます。<br />
+        この検定は主に、観測されたデータと期待されたデータとの間に統計的に有意な差があるかどうかを判断するために使用されます。
+        カイ二乗検定には大きく分けて二つの主要なタイプがあります<br />
+        適合度の検定：これは、一つのカテゴリー内で観測されたデータが、ある理論やモデルにどれだけ適合しているかを評価するために使用されます。例えば、「あるサイコロは公正か？」という問いに答えるために、各目が出る回数が期待される確率（この場合、各目が出る確率は1/6）とどれだけ異なるかを調べます。<br />
+        独立性の検定：これは、二つのカテゴリー間の関連性が統計的に意味があるかどうかを評価するために使用されます。例えば、性別とある商品の好みが関連しているかどうかを調べる場合に用いられます。ここでは、男性と女性がそれぞれ商品A、B、Cをどれだけ好むかのデータから、性別による好みの違いが偶然によるものかどうかを判断します。<br />
+        カイ二乗検定を行う際には、まず観測値と期待値の差を計算し、その差がどれだけ大きいかをカイ二乗統計量を用いて評価します。この統計量は、観測値と期待値の差を二乗し、期待値で割ったものの合計で、この値が大きいほど、観測値と期待値の間に大きな差があることを示します。そして、この統計量をもとに、データに統計的に有意な差があるかどうかを判断します。
+        カイ二乗検定は、観測値が十分に大きい場合（通常は各カテゴリーでの観測回数が5以上）に適しています。データが少ない場合や特定の条件下では、他の方法が推奨されることもあります。
+      </p>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-10">
+      <h5 class="sub-title">使用例</h5>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-10">
+      <h5 class="sub-title">csvから結果の計算</h5>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-10">
+      <h5 class="sub-title">参考：pythonコード</h5>
+      <pre class="position-relative">
+        <div class="position-absolute top-0 end-0 code-header">
+        <i id="copy-button" class="bi bi-clipboard">copy code</i></div>
+        <code class="language-python">
+        def hello_world():
+            print("Hello, World!")
+        
+        hello_world()
+      </code></pre>
+    </div>
+  </div>
 </div>
 <!-- js読み込み -->
 <script
