@@ -17,8 +17,7 @@
   background-color: black;
 }
 /* ボタンのカスタム */
-.bi-plus-circle-fill,
-.bi-person-circle {
+.bi-plus-circle-fill {
   color: #cccccc;
 }
 
@@ -30,26 +29,8 @@
 .form-check-input:checked + label {
   text-decoration: line-through;
 }
-.btn-ham,
-.btn-ham:hover {
+
+.btn-primary {
   background-color: #516c8d;
   border-color: #516c8d;
-  color: #cccccc;
-}
-
-.form-check-input:checked {
-  background-color: #28385e;
-  border-color: #28385e;
-}
-
-.form-check-input:focus {
-  border-color: #516c8d;
-  outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
-}
-.offcanvas-start {
-  width: 250px;
-}
-.offcanvas-title {
-  color: #516c8d;
 }
