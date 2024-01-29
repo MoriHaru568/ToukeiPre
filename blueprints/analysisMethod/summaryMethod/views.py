@@ -9,12 +9,12 @@ summaryMethod=Blueprint(FUNCTION_NAME,__name__,url_prefix="/"+FUNCTION_NAME,temp
 
 @summaryMethod.route('/cluster-analysis')
 def clusterAnalysis():
-    return render_template(FUNCTION_NAME+"/login.html",message="")
+    return render_template(FUNCTION_NAME+"/cluster-analysis.html",message="")
 
 
 @summaryMethod.route('/latent-class-analysis')
 def latentClassAnalysis():
-    return render_template(FUNCTION_NAME+"/login.html",message="")
+    return render_template(FUNCTION_NAME+"/latent-class-analysis.html",message="")
 
 
 

@@ -8,16 +8,16 @@ differenceMethod=Blueprint(FUNCTION_NAME,__name__,url_prefix="/"+FUNCTION_NAME,t
 
 @differenceMethod.route("/chi-square-test",methods=["GET"])
 def chiSquareTest():
-    return render_template(FUNCTION_NAME+"/login.html",message="")
+    return render_template(FUNCTION_NAME+"/chi-square-test.html",message="")
 
 
 @differenceMethod.route("/t-test",methods=["GET"])
 def tTest():
-    return render_template(FUNCTION_NAME+"/login.html",message="")
+    return render_template(FUNCTION_NAME+"/t-test.html",message="")
 
 
 @differenceMethod.route("/variance",methods=["GET"])
 def variance():
-    return render_template(FUNCTION_NAME+"/login.html",message="")
+    return render_template(FUNCTION_NAME+"/variance.html",message="")
 
 

@@ -1,5 +1,12 @@
-/* 使う配色：#28385E #516C8D #6A91C1 #CCCCCC */
+/* 使う配色：#64BCFC #68C5F3 #454545 #DFDFDF */
+.body {
+  color: #454545;
+}
 .code-header {
   background-color: #6a91c1;
   color: #28385e;
+}
+pre {
+  margin: 0;
+  padding: 0;
 }

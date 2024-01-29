@@ -20,25 +20,36 @@
   <div class="row justify-content-center">
     <div class="col-10">
       <h5 class="sub-title">使用例</h5>
+      <p>
+        適合度の検定：日本人の年代別人口比率と、ある都市Aの年代別人口比率の差が偶然と呼べる範囲かどうか<br />
+        独立性の場合：性別と病気Aの感染経験に関連があるかないか
+      </p>
     </div>
   </div>
   <div class="row justify-content-center">
     <div class="col-10">
       <h5 class="sub-title">csvから結果の計算</h5>
+      <div class="file-form">
+        <label for="formFile" class="form-label"
+          >CSVファイルを選択してください</label
+        >
+        <input class="form-control" type="file" id="formFile" />
+      </div>
     </div>
   </div>
   <div class="row justify-content-center">
     <div class="col-10">
       <h5 class="sub-title">参考：pythonコード</h5>
-      <pre class="position-relative">
-        <div class="position-absolute top-0 end-0 code-header">
-        <i id="copy-button" class="bi bi-clipboard">copy code</i></div>
-        <code class="language-python">
+      <div class="code-header d-flex">
+        <p>python</p>
+        <i id="copy-button" class="bi bi-clipboard ms-auto">copy code</i>
+      </div>
+      <pre><code class="language-python">
         def hello_world():
             print("Hello, World!")
         
         hello_world()
-      </code></pre>
+        </code></pre>
     </div>
   </div>
 </div>
