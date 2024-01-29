@@ -1,12 +1,26 @@
-/* 使う配色：#64BCFC #68C5F3 #454545 #DFDFDF */
-.body {
-  color: #454545;
+/* 使う配色：#E85A70 #4EA1D5 #EAEAEA #454552 */
+body {
+  color: #454552;
 }
 .code-header {
-  background-color: #6a91c1;
-  color: #28385e;
+  background-color: #eaeaea;
+  color: #e85a70;
 }
-pre {
-  margin: 0;
-  padding: 0;
+
+.sub-title {
+  background-color: #4ea1d5;
+  color: white;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+#formFile {
+  color: #e85a70;
+}
+.form-control::file-selector-button {
+  background-color: #e85a70;
+  color: white;
+}
+
+.text-decoration-underline {
+  text-decoration-color: #4ea1d5;
 }
